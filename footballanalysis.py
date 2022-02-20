@@ -6,8 +6,6 @@ url='https://drive.google.com/file/d/1fgh0gCpHYSHLwtzei9GLtwOoCm-YKiKc/view?usp=
 url='https://drive.google.com/uc?id=' + url.split('/')[-2]
 df = pd.read_csv(url)
 
-st.set_page_config(page_title="Football Analysis",
-                   layout="wide", initial_sidebar_state="auto", menu_items=None)
 
 # app
 
