@@ -1,5 +1,4 @@
 import streamlit as st
-from PIL import Image
 import altair as alt
 import pandas as pd
 
@@ -7,16 +6,13 @@ url='https://drive.google.com/file/d/1fgh0gCpHYSHLwtzei9GLtwOoCm-YKiKc/view?usp=
 url='https://drive.google.com/uc?id=' + url.split('/')[-2]
 df = pd.read_csv(url)
 
-icon = Image.open(
-    r"C:\Users\karth\OneDrive\Documents\CODES\Python\Football\Screenshot 2022-01-27 132508.jpg")
+
 
 # app
 
 # sidebar
 
-# image on sidebar
-st.sidebar.image(icon, width=65)
-st.sidebar.markdown("""---""")
+
 
 # filters
 
